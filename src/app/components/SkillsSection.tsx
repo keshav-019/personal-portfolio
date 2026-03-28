@@ -12,11 +12,11 @@ export default function SkillsSection() {
     },
     {
       title: 'Backend',
-      skills: ['Node.js', 'Express', 'REST APIs', 'PostgreSQL', 'MongoDB']
+      skills: ['Node.js', 'Express', 'REST APIs', 'PostgreSQL', 'MongoDB', 'Spring Boot', 'Micronaut']
     },
     {
       title: 'Frontend',
-      skills: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS']
+      skills: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'RapidUI', 'OJet', 'JSP']
     },
     {
       title: 'IoT/Embedded',
