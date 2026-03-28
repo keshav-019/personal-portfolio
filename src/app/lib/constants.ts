@@ -94,7 +94,7 @@ export const PROJECTS = [
         tags: ['React', 'TypeScript', 'REST APIs'],
         links: [
             { type: 'view', url: 'https://the-rest-project.vercel.app' },
-            { type: 'source', url: 'https://github.com/survivor480/REST-project' }
+            { type: 'source', url: 'https://github.com/keshav-019/the-rest-project' }
         ]
     },
     {
