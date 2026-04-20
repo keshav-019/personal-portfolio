@@ -1,20 +1,14 @@
-import Link from 'next/link'
 import { siteConfig } from '../config/site'
-import SocialLinks from './SocialLinks'
 
 export default function Footer() {
-    return (
-        <footer className="bg-gray-800 text-white py-8">
-            <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex flex-col md:flex-row justify-between items-center">
-                    <div className="mb-4 md:mb-0">
-                        <p>&copy; {new Date().getFullYear()} {siteConfig.name}. All rights reserved.</p>
-                    </div>
-                    <div className="flex space-x-6">
-                        <SocialLinks />
-                    </div>
-                </div>
-            </div>
-        </footer>
-    )
+  return (
+    <footer className="border-t border-teal-900/10 bg-white/80 px-4 py-6">
+      <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-3 text-sm text-slate-600 md:flex-row">
+        <p>
+          © {new Date().getFullYear()} {siteConfig.name}. Built with intent, performance, and practical product thinking.
+        </p>
+        <p className="font-semibold text-teal-800">Available for frontend and product engineering roles.</p>
+      </div>
+    </footer>
+  )
 }

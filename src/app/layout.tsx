@@ -1,24 +1,20 @@
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] })
-
 export const metadata: Metadata = {
-  title: 'Keshav Kumar Jha | Portfolio',
-  description: 'Personal portfolio of Keshav Kumar Jha',
+  title: 'Keshav Kumar Jha | Frontend Engineer',
+  description:
+    'Frontend developer focused on high-performance dashboards, data-heavy interfaces, and practical AI-powered products.',
 }
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode
-}) {
+}>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   )
 }

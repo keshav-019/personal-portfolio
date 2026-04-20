@@ -1,83 +1,62 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import { CORE_STRENGTHS, SUPPORTING_TOOLS } from '../lib/constants'
 import { fadeIn, staggerContainer } from '../lib/motion'
-import { SKILLS } from '../lib/constants'
 
 export default function SkillsSection() {
-  const skillCategories = [
-    { 
-      title: 'AI/Data Science',
-      skills: ['Python', 'TensorFlow', 'Machine Learning', 'Data Analysis']
-    },
-    {
-      title: 'Backend',
-      skills: ['Node.js', 'Express', 'REST APIs', 'PostgreSQL', 'MongoDB', 'Spring Boot', 'Micronaut']
-    },
-    {
-      title: 'Frontend',
-      skills: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'RapidUI', 'OJet', 'JSP']
-    },
-    {
-      title: 'IoT/Embedded',
-      skills: ['ESP32', 'Raspberry Pi', 'C/C++', 'Arduino']
-    }
-  ]
-
   return (
-    <section id="skills" className="py-16 px-4 bg-gradient-to-br from-indigo-50 to-purple-50">
+    <section id="skills" className="section-shell">
       <motion.div
-        variants={staggerContainer(0.1, 0.2)}
+        variants={staggerContainer(0.1, 0.12)}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: true, amount: 0.25 }}
-        className="max-w-6xl mx-auto"
+        viewport={{ once: true, amount: 0.2 }}
+        className="mx-auto max-w-6xl"
       >
-        {/* Section Title */}
-        <motion.h2 
-          variants={fadeIn('up', 0.2)}
-          className="text-4xl font-bold text-center mb-16 bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-purple-600"
-        >
-          My Skills
-        </motion.h2>
+        <motion.div variants={fadeIn('up', 0)} className="mb-10 space-y-4">
+          <p className="section-kicker">Skill Focus</p>
+          <h2 className="section-heading max-w-3xl">Core strengths first, supporting tools second.</h2>
+          <p className="max-w-3xl text-slate-700">
+            I prioritize depth in a few high-leverage areas instead of listing every technology I&apos;ve touched.
+          </p>
+        </motion.div>
 
-        {/* Skill Categories */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {skillCategories.map((category, catIndex) => (
-            <motion.div
-              key={category.title}
-              variants={fadeIn('up', 0.3 + catIndex * 0.1)}
-              className="bg-white/80 backdrop-blur-sm p-6 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-all duration-300"
+        <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+          {CORE_STRENGTHS.map((group, index) => (
+            <motion.article
+              key={group.title}
+              variants={fadeIn('up', 0.06 * index)}
+              className="card-hover rounded-2xl border border-teal-900/10 bg-white/90 p-6"
             >
-              <h3 className="text-lg font-semibold text-indigo-700 mb-4 flex items-center">
-                <span className="w-6 h-1 bg-indigo-500 mr-3"></span>
-                {category.title}
-              </h3>
-              <div className="flex flex-wrap gap-3">
-                {category.skills.map((skill, skillIndex) => (
-                  <motion.div
-                    key={skill}
-                    initial={{ scale: 0 }}
-                    whileInView={{ scale: 1 }}
-                    viewport={{ once: true }}
-                    transition={{ 
-                      delay: 0.4 + (catIndex * 0.05) + (skillIndex * 0.03),
-                      type: 'spring',
-                      stiffness: 300,
-                      damping: 20
-                    }}
-                    whileHover={{ 
-                      y: -3,
-                      scale: 1.05,
-                      boxShadow: '0 10px 15px -3px rgba(0, 0, 0, 0.1)'
-                    }}
-                    className="px-4 py-2 bg-white rounded-full text-sm font-medium text-indigo-600 border border-indigo-100 shadow-xs hover:border-indigo-200 transition-all"
-                  >
+              <h3 className="display-font text-2xl font-bold text-slate-900">{group.title}</h3>
+              <p className="mt-2 text-sm text-slate-700">{group.description}</p>
+
+              <div className="mt-4 flex flex-wrap gap-2">
+                {group.skills.map((skill) => (
+                  <span key={skill} className="chip">
                     {skill}
-                  </motion.div>
+                  </span>
                 ))}
               </div>
-            </motion.div>
+            </motion.article>
+          ))}
+        </div>
+
+        <div className="mt-8 grid gap-4 md:grid-cols-2">
+          {SUPPORTING_TOOLS.map((group) => (
+            <article key={group.title} className="rounded-2xl border border-orange-900/10 bg-orange-50/55 p-5">
+              <p className="text-xs font-bold uppercase tracking-wide text-orange-700">Supporting Tools</p>
+              <h3 className="display-font mt-1 text-2xl font-bold text-slate-900">{group.title}</h3>
+              <p className="mt-2 text-sm text-slate-700">{group.description}</p>
+              <div className="mt-3 flex flex-wrap gap-2">
+                {group.skills.map((skill) => (
+                  <span key={skill} className="rounded-full border border-orange-300/60 bg-white px-3 py-1 text-xs font-semibold text-orange-800">
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </article>
           ))}
         </div>
       </motion.div>

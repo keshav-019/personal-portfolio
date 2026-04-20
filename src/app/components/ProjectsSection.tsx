@@ -1,42 +1,36 @@
 'use client'
 
 import { motion } from 'framer-motion'
+import { PROJECTS } from '../lib/constants'
 import { fadeIn, staggerContainer } from '../lib/motion'
 import ProjectCard from './ProjectCard'
-import { PROJECTS } from '../lib/constants'
-import Link from 'next/link'
 
 export default function ProjectsSection() {
-    return (
-        <section id="projects" className="py-20 px-4 bg-white">
-            <motion.div
-                variants={staggerContainer(0.1, 0.2)}
-                initial="hidden"
-                whileInView="show"
-                viewport={{ once: true, amount: 0.25 }}
-                className="max-w-6xl mx-auto"
-            >
-                {/* Section Title */}
-                <motion.h2 
-                    variants={fadeIn('up', 0.2)}
-                    className="text-4xl font-bold text-center mb-16 bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 to-purple-600"
-                >
-                    Featured Projects
-                </motion.h2>
+  return (
+    <section id="projects" className="section-shell">
+      <motion.div
+        variants={staggerContainer(0.1, 0.12)}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.2 }}
+        className="mx-auto max-w-6xl"
+      >
+        <motion.div variants={fadeIn('up', 0)} className="mb-10 space-y-4">
+          <p className="section-kicker">Project Case Studies</p>
+          <h2 className="section-heading max-w-3xl">Not just screenshots. Problem, decisions, and impact.</h2>
+          <p className="max-w-3xl text-slate-700">
+            Each project answers what problem it solves, what I owned, and what technical decisions made it work.
+          </p>
+        </motion.div>
 
-                {/* Projects Grid */}
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {PROJECTS.slice(0, 3).map((project, index) => (
-                        <motion.div
-                            key={index}
-                            variants={fadeIn('up', 0.3 + index * 0.1)}
-                            whileHover={{ y: -5 }}
-                        >
-                            <ProjectCard project={project} />
-                        </motion.div>
-                    ))}
-                </div>
+        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          {PROJECTS.map((project, index) => (
+            <motion.div key={project.title} variants={fadeIn('up', 0.06 * index)}>
+              <ProjectCard project={project} />
             </motion.div>
-        </section>
-    )
+          ))}
+        </div>
+      </motion.div>
+    </section>
+  )
 }

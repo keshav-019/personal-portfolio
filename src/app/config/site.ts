@@ -1,9 +1,10 @@
 export const siteConfig = {
-    name: "Keshav Kumar Jha",
-    description: "Personal portfolio of Keshav Kumar Jha, AI & Data Science Engineer",
-    url: "https://keshavkumarjha.vercel.app",
-    links: {
-        github: "https://github.com/keshavkumarjha",
-        linkedin: "https://linkedin.com/in/keshavkumarjha",
-    },
+  name: 'Keshav Kumar Jha',
+  description:
+    'Frontend developer focused on high-performance dashboards and data-heavy interfaces with real-world product impact.',
+  url: 'https://keshavkumarjha.vercel.app',
+  links: {
+    github: 'https://github.com/keshav-019',
+    linkedin: 'https://www.linkedin.com/in/ks48/',
+  },
 }
