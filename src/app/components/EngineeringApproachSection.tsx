@@ -19,7 +19,7 @@ export default function EngineeringApproachSection() {
           <h2 className="section-heading max-w-3xl">Engineering approach that shows how I think, not just what I ship.</h2>
           <p className="max-w-3xl text-slate-700">
             Hiring teams care about decisions and tradeoffs. These are the principles I use when building product
-            features and interfaces.
+            features, backend systems, and AI-assisted workflows.
           </p>
         </motion.div>
 

@@ -16,10 +16,10 @@ export default function AboutSection() {
       >
         <motion.div variants={fadeIn('up', 0)} className="mb-10 space-y-4">
           <p className="section-kicker">About</p>
-          <h2 className="section-heading max-w-3xl">From embedded devices to enterprise UIs, I build for real constraints.</h2>
+          <h2 className="section-heading max-w-3xl">From enterprise systems to AI agents, I build for real constraints.</h2>
           <p className="max-w-3xl text-slate-700">
-            My edge is cross-domain thinking: I can reason about product UX, backend integration, and system behavior
-            together. That helps me build interfaces that are not just attractive, but operationally reliable.
+            My edge is cross-domain thinking: I can reason about product UX, backend integration, automation safety,
+            and system behavior together. That helps me build software that is useful, explainable, and reliable.
           </p>
         </motion.div>
 

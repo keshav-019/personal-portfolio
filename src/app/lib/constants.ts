@@ -52,7 +52,7 @@ export const SOCIAL_LINKS: SocialLink[] = [
 
 export const HERO_BADGES = [
   'Open to opportunities',
-  'Project Intern @ Oracle',
+  'Oracle internship completed Jul 2026',
   'M.Tech (AI & Data Science) @ NIT Durgapur',
 ]
 
@@ -60,12 +60,12 @@ export const TRUST_SIGNALS: TrustSignal[] = [
   {
     label: 'Industry Experience',
     value: '3+ Years',
-    detail: 'Shipped enterprise and embedded software across internships and full-time roles.',
+    detail: 'Built backend, automation, cloud, and enterprise software across internships and full-time roles.',
   },
   {
     label: 'Case Studies',
-    value: '3 Deep Dives',
-    detail: 'Each project explains the problem, engineering decisions, and measurable outcomes.',
+    value: '4 Deep Dives',
+    detail: 'Developer tools, AI agents, career infrastructure, and operations-focused engineering systems.',
   },
   {
     label: 'Public Profiles',
@@ -94,19 +94,19 @@ export const QUICK_LINKS = [
 
 export const CORE_STRENGTHS: SkillGroup[] = [
   {
-    title: 'Frontend Architecture',
-    description: 'Building scalable React/Next.js interfaces that remain fast under data-heavy workloads.',
-    skills: ['React', 'Next.js', 'TypeScript', 'State Management', 'Performance Optimization'],
+    title: 'Backend And System Design',
+    description: 'Designing APIs, services, and data flows that stay maintainable as product scope grows.',
+    skills: ['Node.js', 'FastAPI', 'Spring Boot', 'REST APIs', 'PostgreSQL', 'Distributed Systems'],
   },
   {
-    title: 'API And Backend Integration',
-    description: 'Designing reliable API interactions and backend workflows for production web applications.',
-    skills: ['Node.js', 'Express', 'REST APIs', 'PostgreSQL', 'MongoDB', 'Spring Boot'],
+    title: 'AI-Native Developer Tools',
+    description: 'Building practical AI workflows with memory, tool execution, approvals, and product-grade UX.',
+    skills: ['LLM APIs', 'AI Agents', 'RAG', 'LangGraph', 'Ollama', 'Tool Calling'],
   },
   {
-    title: 'Applied AI And IoT Systems',
-    description: 'Combining embedded systems with ML pipelines to solve real-world sensing and automation problems.',
-    skills: ['Python', 'TensorFlow', 'ESP32', 'Raspberry Pi', 'Data Science'],
+    title: 'Product Interfaces',
+    description: 'Shipping React, Next.js, Electron, and mobile surfaces for complex workflows without hiding the system.',
+    skills: ['React', 'Next.js', 'TypeScript', 'Electron', 'React Native', 'Playwright'],
   },
 ]
 
@@ -114,28 +114,28 @@ export const SUPPORTING_TOOLS: SkillGroup[] = [
   {
     title: 'Delivery And Collaboration',
     description: 'Tooling I use to ship production-ready software in teams.',
-    skills: ['Git', 'Docker', 'Firebase', 'Vercel', 'Jira', 'Confluence'],
+    skills: ['Git', 'Docker', 'Kubernetes', 'Firebase', 'Vercel', 'OCI', 'Linux', 'CI/CD'],
   },
 ]
 
 export const ENGINEERING_PRINCIPLES: EngineeringPrinciple[] = [
   {
-    title: 'Design Around User Workflows',
-    description: 'I start from high-friction user actions and optimize the journey before polishing visuals.',
-    tradeoff: 'May delay visual details early, but it prevents pretty-yet-useless interfaces.',
-    example: 'In API tooling projects, request history and environment handling came before aesthetic tweaks.',
+    title: 'Build Around Real Workflows',
+    description: 'I start with the actual task a developer or operator needs to finish, then shape the system around it.',
+    tradeoff: 'It takes more discovery up front, but the final product solves the right problem.',
+    example: 'EchoMind and The REST Project both prioritize tool execution, context, and approval paths over surface-level chat.',
   },
   {
-    title: 'Optimize Perceived Performance',
-    description: 'Fast feels better than complex. I reduce blocking UI work and prioritize smooth interactions.',
-    tradeoff: 'Adds engineering effort in state structure and rendering boundaries.',
-    example: 'On dashboard-style pages, I split heavy components and use progressive loading patterns.',
+    title: 'Keep Systems Explainable',
+    description: 'When AI or automation is involved, I make actions, evidence, and uncertainty visible.',
+    tradeoff: 'Adds product and data-model complexity, but it creates trust and debuggability.',
+    example: 'StackCendra is planned around evidence-backed facts, confidence scores, and human-approved operations.',
   },
   {
-    title: 'Document Decisions And Tradeoffs',
-    description: 'I capture why a stack or pattern was chosen so maintenance is easier for the next engineer.',
-    tradeoff: 'Slightly slower implementation, much faster onboarding and debugging later.',
-    example: 'For each flagship project, I include stack choices, constraints, and what I would improve next.',
+    title: 'Design For Safe Execution',
+    description: 'I prefer narrow tools, permission boundaries, logs, and validation before automation touches real systems.',
+    tradeoff: 'Safer flows can feel slower at first, but they prevent costly hidden failure modes.',
+    example: 'EchoMind uses a typed tool registry, risk-tiered policy engine, approvals, and audit logs before running actions.',
   },
 ]
 
@@ -158,121 +158,144 @@ export const EDUCATION: Education[] = [
 export const EXPERIENCE: Experience[] = [
   {
     role: 'Project Intern',
-    company: 'Oracle',
-    duration: 'Jan 2026 - Present',
-    description: 'Contributing to Aconex features, bug fixes, and OCI deployment workflows in production systems.',
+    company: 'Oracle Financial Services Software',
+    duration: 'Jan 2026 - Jul 2026',
+    description: 'Contributed to Oracle Aconex document-management workflows across enterprise frontend, backend, and cloud systems.',
     highlights: [
-      'Implemented product features across frontend and backend modules.',
-      'Resolved defects in customer-facing workflows with production log validation.',
-      'Worked with RapidUI, Spring Boot, and Oracle ecosystem tooling.',
+      'Worked across Angular, Spring Boot, Oracle SQL, and Oracle Cloud Infrastructure.',
+      'Built Playwright automation for document creation, metadata validation, hierarchy checks, uploads, and version management.',
+      'Investigated production defects and improved release confidence through debugging, reviews, and regression coverage.',
     ],
   },
   {
-    role: 'Software Engineer',
-    company: 'Distronix',
-    duration: 'Apr 2022 - May 2025',
-    description: 'Built and maintained software for enterprise operations, automation hardware, and public systems.',
+    role: 'Backend Developer and DevOps Engineer',
+    company: 'Distronix Pvt. Ltd.',
+    duration: 'Aug 2022 - Oct 2025',
+    description: 'Built and maintained backend services, operational dashboards, monitoring systems, and Linux-hosted deployments.',
     highlights: [
-      'Built backend services for an employee management system using Node.js.',
-      'Developed control workflows for boom barrier automation with ESP32 integration.',
-      'Maintained Raspberry Pi-based public information systems in production.',
+      'Designed Node.js and Express APIs for employee management, payroll, inventory, procurement, and monitoring workflows.',
+      'Containerized services with Docker and deployed production applications across Linux servers.',
+      'Worked across PostgreSQL, MySQL, MongoDB, dashboard integrations, logging, and production issue resolution.',
     ],
   },
 ]
 
 export const PROJECTS: Project[] = [
   {
-    title: 'REST Project',
-    summary: 'A fast API workbench inspired by Postman with developer-first workflows.',
+    title: 'The REST Project',
+    summary: 'A Postman-inspired developer workspace for APIs, databases, teams, SSH, and local terminal workflows.',
     image: '/images/rest-project.png',
     problem:
-      'Manual API testing was fragmented across multiple tools and repeated setup consumed significant debugging time.',
+      'API development often scatters requests, environments, database checks, SSH sessions, and team context across separate tools.',
     role:
-      'I designed and built the frontend experience, request lifecycle flows, and reusable components for request/response inspection.',
+      'I built the web and Electron product surfaces, request workflows, database integrations, workspace model, and local developer capabilities.',
     impact:
-      'Created a single workspace for API exploration, reducing repetitive setup and making endpoint validation significantly quicker.',
+      'Created a single workspace for REST and GraphQL testing, SQL exploration, shared collections, environments, authentication, and desktop-only terminal/SSH workflows.',
     keyFeatures: [
-      'Request collections with organized endpoints',
-      'Environment variable support for reusable configurations',
-      'Response viewer with readable payload formatting',
-      'Intuitive method-based request builder',
+      'REST and GraphQL request builder with collections and environments',
+      'Database explorer and SQL execution across PostgreSQL, MySQL, Oracle, MSSQL, and SQLite-oriented workflows',
+      'Team workspaces, authentication flows, shared collections, and profile management',
+      'Electron access to SSH sessions, local terminal workflows, and native developer operations',
     ],
-    techStack: ['React', 'TypeScript', 'REST APIs', 'Tailwind CSS', 'Vercel'],
+    techStack: ['Next.js', 'Electron', 'TypeScript', 'Firebase', 'SQL Databases', 'SSH', 'Docker'],
     technicalHighlights: [
-      'Structured request state to support repeatable test workflows.',
-      'Built reusable UI patterns for request editing and response rendering.',
-      'Designed for quick switching across endpoints without context loss.',
+      'Structured request state for repeatable API testing and fast endpoint switching.',
+      'Built database adapters and UI flows for schema exploration and query execution.',
+      'Dockerized the project for local startup while keeping the desktop shell available for native workflows.',
     ],
     challengeAndLearning:
-      'Balancing flexibility with simplicity was the hardest part. I learned to progressively reveal advanced features without overwhelming new users.',
+      'The challenge was keeping a broad developer platform understandable. I learned to separate browser-safe workflows from desktop-native capabilities without fragmenting the product.',
     links: [
       { type: 'demo', label: 'Live Demo', url: 'https://the-rest-project.vercel.app' },
       { type: 'source', label: 'GitHub', url: 'https://github.com/keshav-019/the-rest-project' },
     ],
   },
   {
-    title: 'Sound Classification With ESP32S3',
-    summary: 'An edge-ML system that classifies ambient sound categories directly on embedded hardware.',
-    image: '/images/sound-classification.png',
+    title: 'EchoMind',
+    summary: 'A local-first desktop AI assistant with voice, memory, approvals, tool execution, and automation.',
+    image: '/images/echomind.jpg',
     problem:
-      'Real-time sound classification often depends on cloud inference, which introduces latency and connectivity constraints.',
+      'Most assistants can chat, but they do not safely operate a local machine, remember user workflows, or expose what they are doing.',
     role:
-      'I implemented the embedded inference pipeline, model integration, and signal-processing workflow on ESP32 hardware.',
+      'I built the Electron desktop shell, FastAPI agent service, typed tool registry, permission system, voice pipeline, memory layer, workflows, and automation tools.',
     impact:
-      'Enabled local inference for six sound categories, demonstrating a low-latency offline pipeline for edge environments.',
+      'Completed the original eight-phase roadmap into a working personal computing platform with local STT/TTS, screen awareness, routines, recovery mode, developer workspaces, and smart-home integration.',
     keyFeatures: [
-      'Audio capture and preprocessing on-device',
-      'Model inference tuned for ESP32S3 constraints',
-      'Category classification across six sound classes',
-      'Portable architecture for edge deployment experiments',
+      'Electron overlay with live execution timeline and approval buttons',
+      'FastAPI agent service with provider-agnostic model interface and typed tools',
+      'Risk-tiered policy engine, approval gates, JSONL audit logs, and recovery mode',
+      'Local push-to-talk speech-to-text, spoken replies, semantic memory, routines, workflows, and Home Assistant control',
     ],
-    techStack: ['ESP32S3', 'TensorFlow Lite', 'Python', 'Embedded C/C++', 'IoT'],
+    techStack: ['Python', 'FastAPI', 'Electron', 'TypeScript', 'LangGraph', 'SQLite', 'Playwright'],
     technicalHighlights: [
-      'Optimized inference flow for constrained memory and compute.',
-      'Handled signal pre-processing to improve prediction stability.',
-      'Validated performance across varied ambient sound conditions.',
+      'Implemented safe OS/browser automation using typed tools instead of raw shell-by-default execution.',
+      'Built local semantic memory with fastembed and sqlite-vec so useful context can persist without cloud embedding calls.',
+      'Designed approval-aware multi-step workflows that survive service restarts through SQLite checkpointing.',
     ],
     challengeAndLearning:
-      'The key challenge was balancing model quality with hardware limits. I learned how quantization and preprocessing choices directly affect edge inference reliability.',
+      'The hard part was making an AI assistant useful without making it reckless. I learned to treat permissions, auditability, and rollback paths as core product features.',
     links: [
-      {
-        type: 'source',
-        label: 'GitHub',
-        url: 'https://github.com/keshav-019/sound-classification-using-esp32',
-      },
+      { type: 'demo', label: 'Demo Link', url: 'https://echomind.yourwaytolearn.com' },
+      { type: 'source', label: 'GitHub', url: 'https://github.com/keshav-019/echomind' },
     ],
   },
   {
-    title: 'Learn Project',
-    summary: 'A course delivery platform with progress-focused student workflows.',
-    image: '/images/learn-project.jpg',
+    title: 'CareerOS',
+    summary: 'An AI career workspace across web, desktop, browser extension, and mobile.',
+    image: '/images/careeros.png',
     problem:
-      'Learners needed a lightweight platform to discover courses, track progress, and continue content without friction.',
+      'Job search and interview preparation are split across trackers, notes, resumes, coding tools, calendars, and browser tabs.',
     role:
-      'I built major frontend flows, integrated backend endpoints, and shaped the user journey from course discovery to consumption.',
+      'I designed the monorepo architecture and built the web app, desktop companion, browser extension, mobile app, shared types, Firebase flows, and AI-backed career workflows.',
     impact:
-      'Delivered a functional e-learning experience with course browsing, enrollment-style flow, and student-friendly navigation.',
+      'Delivered a multi-surface product covering application tracking, job capture, interview preparation, system design practice, coding judge workflows, learning, analytics, calendars, profiles, settings, and resume tooling.',
     keyFeatures: [
-      'Course discovery and detail views',
-      'Structured learning flow for lessons',
-      'Student-oriented interface for continued progress',
-      'Admin-ready foundation for future content management',
+      'Application pipeline with Kanban/table views, reminders, analytics, and job records',
+      'Browser extension for detecting and saving job postings into CareerOS',
+      'Interview War Room with aptitude, CS, AI, system design, and desktop coding tracks',
+      'Desktop companion for LaTeX resume compilation and local multi-language coding judge',
     ],
-    techStack: ['React', 'Node.js', 'MongoDB', 'Express', 'JWT'],
+    techStack: ['Next.js', 'TypeScript', 'Firebase', 'Electron', 'React Native', 'Expo', 'Chrome Extension'],
     technicalHighlights: [
-      'Designed reusable page sections to speed up feature additions.',
-      'Integrated API-driven content rendering for dynamic course data.',
-      'Planned modular backend expansion paths for analytics and recommendations.',
+      'Connected web, extension, desktop, and mobile clients through shared domain types and Firebase-backed state.',
+      'Built desktop-only helper flows for local compilers and LaTeX while keeping web-safe routes separate.',
+      'Designed extension authentication through OAuth, email/password, and token package fallback paths.',
     ],
     challengeAndLearning:
-      'Keeping the UI simple while preparing for future scale taught me to favor modular components and predictable data contracts early.',
+      'The hardest part was keeping feature parity across surfaces while respecting what belongs on web, desktop, extension, or mobile. I learned to draw sharper platform boundaries.',
     links: [
-      {
-        type: 'demo',
-        label: 'Live Demo',
-        url: 'https://e-learning-frontend-5q3s167zd-survivor480s-projects.vercel.app/',
-      },
-      { type: 'source', label: 'GitHub', url: 'https://github.com/survivor480/e-learning-frontend' },
+      { type: 'demo', label: 'Live Demo', url: 'https://keshav-019-career-os.vercel.app' },
+      { type: 'source', label: 'GitHub', url: 'https://github.com/keshav-019/career-os' },
+    ],
+  },
+  {
+    title: 'StackCendra',
+    summary: 'An AI-native engineering workspace for project discovery, environment drift, and production recovery.',
+    image: '/images/stackcendra.png',
+    problem:
+      'Engineering failures often live between code, configuration, local setup, deployments, infrastructure, and telemetry, while teams debug them through disconnected tools.',
+    role:
+      'I am shaping the Phase 0 product contract, architecture, wiki, roadmap, visual prototype, and release plan for an evidence-backed local-to-production workflow.',
+    impact:
+      'Defined a focused wedge around intelligent project discovery and a phased platform roadmap that grows toward configuration intelligence, controlled deployments, incident diagnosis, and sanitized production-to-local reproduction.',
+    keyFeatures: [
+      'Trusted directory scanning with no project code execution in the first release',
+      'Evidence-backed map of repositories, services, runtimes, tools, ports, data stores, and dependencies',
+      'Confidence scores, source locations, correction controls, and secret redaction',
+      'Roadmap for Docker/Kubernetes operations, Git intelligence, observability, approvals, and recovery workflows',
+    ],
+    techStack: ['Next.js', 'TypeScript', 'Tauri', 'Rust', 'Go', 'Python', 'PostgreSQL', 'OpenTelemetry'],
+    technicalHighlights: [
+      'Designed the first release around deterministic detectors before optional AI explanation layers.',
+      'Defined security boundaries where AI proposes, policy validates, humans approve, and constrained runners execute.',
+      'Mapped future responsibilities across Tauri, Rust, Go, Python, PostgreSQL, Temporal, and OpenTelemetry.',
+    ],
+    challengeAndLearning:
+      'The product is intentionally early, so the challenge is honesty: show a serious architecture and prototype without pretending the backend/control plane is already connected.',
+    links: [
+      { type: 'demo', label: 'Demo Link', url: 'https://stackcendra.com' },
+      { type: 'source', label: 'GitHub', url: 'https://github.com/keshav-019/stackcendra' },
+      { type: 'source', label: 'Wiki', url: 'https://github.com/keshav-019/stackcendra/wiki' },
     ],
   },
 ]

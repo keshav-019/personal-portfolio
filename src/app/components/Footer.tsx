@@ -7,7 +7,7 @@ export default function Footer() {
         <p>
           © {new Date().getFullYear()} {siteConfig.name}. Built with intent, performance, and practical product thinking.
         </p>
-        <p className="font-semibold text-teal-800">Available for frontend and product engineering roles.</p>
+        <p className="font-semibold text-teal-800">Available for software engineering, backend, and AI platform roles.</p>
       </div>
     </footer>
   )

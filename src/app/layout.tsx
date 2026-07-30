@@ -2,9 +2,9 @@ import type { Metadata } from 'next'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Keshav Kumar Jha | Frontend Engineer',
+  title: 'Keshav Kumar Jha | Software Engineer',
   description:
-    'Frontend developer focused on high-performance dashboards, data-heavy interfaces, and practical AI-powered products.',
+    'Software engineer focused on AI-native developer tools, backend systems, automation, and practical product platforms.',
 }
 
 export default function RootLayout({

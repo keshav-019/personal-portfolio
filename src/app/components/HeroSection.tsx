@@ -26,21 +26,21 @@ export default function HeroSection() {
           <div className="space-y-4">
             <p className="section-kicker">Distinct Value</p>
             <h1 className="display-font text-4xl font-bold leading-tight text-slate-900 sm:text-5xl lg:text-6xl">
-              I build high-performance interfaces for data-heavy products and real-world systems.
+              I build AI-native developer tools, backend systems, and product surfaces that operate in the real world.
             </h1>
             <p className="max-w-2xl text-base text-slate-700 sm:text-lg">
-              Frontend engineer with production experience across enterprise workflows, API tooling, and IoT-driven
-              products. I focus on speed, clarity, and maintainable architecture that teams can actually ship with.
+              Software engineer with production experience across enterprise workflows, API platforms, AI agents, and
+              cloud-backed systems. I care about safe execution, clear interfaces, and architecture that teams can ship.
             </p>
             <p className="text-base font-semibold text-teal-800">
               Current focus:{' '}
               <TypeAnimation
                 sequence={[
-                  'dashboard UX at scale.',
+                  'AI-native developer platforms.',
                   1800,
-                  'fast developer tooling experiences.',
+                  'safe local automation.',
                   1800,
-                  'bridging AI + product usability.',
+                  'backend systems with visible evidence.',
                   1800,
                 ]}
                 speed={42}
@@ -113,16 +113,16 @@ export default function HeroSection() {
                 </div>
 
                 <h2 className="display-font text-center text-2xl font-bold text-slate-900">Keshav Kumar Jha</h2>
-                <p className="mt-1 text-center text-sm font-semibold text-teal-700">Frontend Engineer | AI & Data Systems</p>
+                <p className="mt-1 text-center text-sm font-semibold text-teal-700">Software Engineer | AI Agents | Backend Systems</p>
 
                 <ul className="mt-6 space-y-3 text-sm text-slate-700">
                   <li className="flex items-start gap-2">
                     <FaCircleCheck className="mt-0.5 text-teal-600" />
-                    Production feature development at Oracle (Aconex ecosystem).
+                    Oracle Aconex internship completed in July 2026.
                   </li>
                   <li className="flex items-start gap-2">
                     <FaCircleCheck className="mt-0.5 text-teal-600" />
-                    Experience across React, backend APIs, and embedded ML workflows.
+                    Experience across backend APIs, AI agents, React, Electron, and cloud systems.
                   </li>
                   <li className="flex items-start gap-2">
                     <FaCircleCheck className="mt-0.5 text-teal-600" />
