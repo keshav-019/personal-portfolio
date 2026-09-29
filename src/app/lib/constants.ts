@@ -51,8 +51,8 @@ export const SOCIAL_LINKS: SocialLink[] = [
 ]
 
 export const HERO_BADGES = [
-  'Open to opportunities',
-  'Oracle internship completed Jul 2026',
+  'Senior Backend Engineer @ MishiPay',
+  'Open to remote & open-source collaboration',
   'M.Tech (AI & Data Science) @ NIT Durgapur',
 ]
 
@@ -96,7 +96,7 @@ export const CORE_STRENGTHS: SkillGroup[] = [
   {
     title: 'Backend And System Design',
     description: 'Designing APIs, services, and data flows that stay maintainable as product scope grows.',
-    skills: ['Node.js', 'FastAPI', 'Spring Boot', 'REST APIs', 'PostgreSQL', 'Distributed Systems'],
+    skills: ['Python', 'Django', 'Node.js', 'FastAPI', 'Spring Boot', 'REST APIs', 'PostgreSQL', 'Distributed Systems'],
   },
   {
     title: 'AI-Native Developer Tools',
@@ -156,6 +156,16 @@ export const EDUCATION: Education[] = [
 ]
 
 export const EXPERIENCE: Experience[] = [
+  {
+    role: 'Senior Backend Engineer',
+    company: 'MishiPay',
+    duration: 'Sep 2026 - Present',
+    description: 'Building backend services for MishiPay\'s retail self-checkout and payments platform in Python and Django.',
+    highlights: [
+      'Working on Django and Django REST Framework services behind in-store checkout, payments, and retailer integrations.',
+      'Debugging transaction handling and data-integrity issues in a large production Django codebase.',
+    ],
+  },
   {
     role: 'Project Intern',
     company: 'Oracle Financial Services Software',
