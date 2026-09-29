@@ -118,7 +118,7 @@ export default function HeroSection() {
                 <ul className="mt-6 space-y-3 text-sm text-slate-700">
                   <li className="flex items-start gap-2">
                     <FaCircleCheck className="mt-0.5 text-teal-600" />
-                    Oracle Aconex internship completed in July 2026.
+                    Senior Backend Engineer at MishiPay (Python/Django) since Sep 2026.
                   </li>
                   <li className="flex items-start gap-2">
                     <FaCircleCheck className="mt-0.5 text-teal-600" />
