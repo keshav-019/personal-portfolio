@@ -51,7 +51,7 @@ export const SOCIAL_LINKS: SocialLink[] = [
 ]
 
 export const HERO_BADGES = [
-  'Senior Backend Engineer @ MishiPay',
+  'Backend Developer @ MishiPay',
   'Open to remote & open-source collaboration',
   'M.Tech (AI & Data Science) @ NIT Durgapur',
 ]
@@ -157,7 +157,7 @@ export const EDUCATION: Education[] = [
 
 export const EXPERIENCE: Experience[] = [
   {
-    role: 'Senior Backend Engineer',
+    role: 'Backend Developer',
     company: 'MishiPay',
     duration: 'Sep 2026 - Present',
     description: 'Building backend services for MishiPay\'s retail self-checkout and payments platform in Python and Django.',
@@ -178,9 +178,9 @@ export const EXPERIENCE: Experience[] = [
     ],
   },
   {
-    role: 'Backend Developer and DevOps Engineer',
+    role: 'Software Engineer',
     company: 'Distronix Pvt. Ltd.',
-    duration: 'Aug 2022 - Oct 2025',
+    duration: 'Apr 2022 - May 2025',
     description: 'Built and maintained backend services, operational dashboards, monitoring systems, and Linux-hosted deployments.',
     highlights: [
       'Designed Node.js and Express APIs for employee management, payroll, inventory, procurement, and monitoring workflows.',
